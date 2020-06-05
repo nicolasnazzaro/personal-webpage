@@ -1,26 +1,34 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Fragment } from 'react';
+import { Route, Switch, Redirect } from 'react-router-dom';
+import AboutComponent from './components/about/AboutComponent';
+import ProjectsComponent from './components/projects/ProjectsComponent';
+import ContactsComponent from './components/contacts/ContactsComponent';
+import NotFoundComponent from './components/not-found/NotFoundComponent';
+import NavBar from './components/navbar/NavBar';
+import StackComponent from './components/techStack/StackComponent';
+import { AppContainer } from './components/appContainer/AppContainer';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Route render={() => (
+        <Fragment>
+          <AppContainer>
+            <NavBar/>
+            <Switch>
+              <Route exact path='/' component={AboutComponent}/>
+              <Route path='/projects' component={ProjectsComponent}/>
+              <Route path='/contacts' component={ContactsComponent}/>
+              <Route path='/stack' component={StackComponent}/>
+              <Route path='/notfound' component={NotFoundComponent}/>
+              <Route>
+                <Redirect to='/notfound'/>
+              </Route>
+            </Switch>
+          </AppContainer>
+        </Fragment>
+      )}/>
   );
 }
+
 
 export default App;

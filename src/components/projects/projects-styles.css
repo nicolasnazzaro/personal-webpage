@@ -1,0 +1,17 @@
+.logo {
+    min-width: 30px;
+    max-width: 30px;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+.logo:hover {
+    filter: invert(0.4) sepia(1) saturate(20) hue-rotate(180deg);
+    cursor: pointer;
+}
+
+#link {
+    margin-bottom: -1px;
+    min-width: 32px;
+    max-width: 32px;
+}
