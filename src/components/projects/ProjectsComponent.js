@@ -1,14 +1,14 @@
 import React from 'react';
-import { ProjectsContainer } from './ProjectsContainer';
+import { ContentContainer } from '../common/ContentContainer';
 import { Item, Label, Segment } from 'semantic-ui-react';
 import { projects } from '../../repository/projects';
 import './projects-styles.css';
 
 const ProjectsComponent = () => {
     return (
-        <ProjectsContainer>
+        <ContentContainer>
            <h3>Projects <span role='img' aria-label=''>🚀</span></h3>
-           <p>Here some of my favourite open-source projects I've worked on lately.</p>
+           <p>Here are some of my favourite open-source projects I've worked on lately.</p>
            {projects.map(((p, i) => (
                 <Item key={i} style={{marginBottom: 45, marginTop: 30}}>
                     <Item.Content>
@@ -16,17 +16,7 @@ const ProjectsComponent = () => {
                             <Segment>
                                     <h3>{p.title}</h3>
                                     <a href={p.url} target='_blank' rel="noopener noreferrer">
-                                        <div style={{
-                                            width: '100%', 
-                                            height: 250,
-                                            marginBottom: 10,
-                                            borderRadius: 5, 
-                                            backgroundImage: `url(${p.image})`,
-                                            backgroundPosition: 0,
-                                            backgroundRepeat: 'no-repeat',
-                                            cursor: 'pointer'
-                                        }}
-                                        ></div>
+                                        <div className='div-img' style={{backgroundImage: `url(${p.image})`}}></div>
                                     </a>
                                 <Item.Extra>
                                     {p.tags.map((t, i) => (
@@ -39,23 +29,29 @@ const ProjectsComponent = () => {
                                     <p>description</p>
                                 </Item.Description>
                             </Segment>
-                            <Segment secondary>
+                            <Segment secondary style={{display: 'flex'}}>
                                 {!!p.url && 
                                     <a href={p.url} target='_blank' rel="noopener noreferrer">
-                                        <img src='/assets/link.svg' alt='link to project' className='logo' id='link'/>
+                                        <div className='link-container'>
+                                                <img src='/assets/link.svg' alt='link to linkedin' className='link-icon'/>
+                                            <span className='text'>Website</span>
+                                        </div>
                                     </a>
                                 } 
                                 {!!p.github &&
                                     <a href={p.github} target='_blank' rel="noopener noreferrer">
-                                        <img src='/assets/github.svg' alt='link to github repository' className='logo'/>
-                                    </a>
+                                        <div className='link-container'>
+                                                <img src='/assets/github.svg' alt='link to linkedin' className='github-icon-r'/>
+                                            <span className='text'>Repository</span>
+                                        </div>
+                                    </a>  
                                 }               
                             </Segment>
                         </Segment.Group>
                     </Item.Content>
                 </Item>
            )))}
-        </ProjectsContainer>
+        </ContentContainer>
     );
 }
 

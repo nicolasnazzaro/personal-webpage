@@ -1,15 +1,15 @@
 import React from 'react';
-import { StackContainer } from './StackContainer';
+import { ContentContainer } from '../common/ContentContainer';
 import { Segment } from 'semantic-ui-react';
 
 const StackComponent = () => {
     return (
-        <StackContainer>
+        <ContentContainer>
             <h3>My favourite tech stack <span role='img' aria-label=''>🛠️</span></h3>
             <p>I'm always excited to learn new technologies, however 
                 whenever possible I'd rather work with the following stack:
             </p>
-            <Segment attached style={{marginTop: 30}}>
+            <Segment style={{marginTop: 30}}>
             <table>
                 <tbody>
                     <tr style={{height: 30}}>
@@ -32,7 +32,7 @@ const StackComponent = () => {
             </table>
             </Segment>
             <p style={{marginTop: 45}}>I'm also familiar with Angular, ASP .NET Framework and .NET Core MVC</p>
-        </StackContainer>
+        </ContentContainer>
     );
 }
 

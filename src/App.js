@@ -2,11 +2,11 @@ import React, { Fragment } from 'react';
 import { Route, Switch, Redirect } from 'react-router-dom';
 import AboutComponent from './components/about/AboutComponent';
 import ProjectsComponent from './components/projects/ProjectsComponent';
-import ContactsComponent from './components/contacts/ContactsComponent';
+import ContactComponent from './components/contacts/ContactsComponent';
 import NotFoundComponent from './components/not-found/NotFoundComponent';
 import NavBar from './components/navbar/NavBar';
 import StackComponent from './components/techStack/StackComponent';
-import { AppContainer } from './components/appContainer/AppContainer';
+import { AppContainer } from './components/common/AppContainer';
 
 const App = () => {
   return (
@@ -17,7 +17,7 @@ const App = () => {
             <Switch>
               <Route exact path='/' component={AboutComponent}/>
               <Route path='/projects' component={ProjectsComponent}/>
-              <Route path='/contacts' component={ContactsComponent}/>
+              <Route path='/contacts' component={ContactComponent}/>
               <Route path='/stack' component={StackComponent}/>
               <Route path='/notfound' component={NotFoundComponent}/>
               <Route>

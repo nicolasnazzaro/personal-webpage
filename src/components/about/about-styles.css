@@ -1,0 +1,21 @@
+.about-main-container {
+    display: flex; 
+    align-items: bottom;
+    margin-bottom: 10px; 
+    margin-top: 10px; 
+    min-height: 84px;
+}
+
+.about-inner-container {
+    display: flex;  
+    flex-direction: column; 
+    justify-content: space-between; 
+    margin-left: 15px; 
+    align-items: start;
+}
+
+.about-pic {
+    max-width: 80px;
+    max-height: 80px; 
+    margin-top: 4px;
+}
