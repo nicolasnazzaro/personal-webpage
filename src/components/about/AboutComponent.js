@@ -3,11 +3,14 @@ import { ContentContainer } from '../common/ContentContainer';
 import { Segment, Button } from 'semantic-ui-react';
 import Typical from 'react-typical';
 import './about-styles.css';
+import Pulse from 'react-reveal/Pulse';
 
 const AboutComponent = () => {
     return (
         <ContentContainer>
-           <h3>Hi, I'm <span>Nicolas </span><span role='img' aria-label=''>👋</span></h3>
+           <Pulse>
+           <h3>Hi, I'm Nicolas <span role='img' aria-label=''>👋</span></h3>
+           </Pulse>    
                 <Segment style={{marginTop: 30}}>
                     <div className='about-main-container'>
                         <img className='about-pic' src='/assets/avatar.png' alt='avatar'/> 

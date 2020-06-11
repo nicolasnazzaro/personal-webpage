@@ -41,3 +41,17 @@
 .link-container:hover .github-icon-r {
     filter: none;
 }
+
+@media (hover: none) and (pointer: coarse) {
+    .text {
+        color: inherit;
+    }
+    
+    .link-icon {
+        filter: none;
+    }
+    
+    .github-icon-r {
+        filter: none;
+    }
+}

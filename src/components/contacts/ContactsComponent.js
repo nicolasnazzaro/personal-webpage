@@ -1,6 +1,6 @@
 import React from 'react';
 import { ContentContainer } from '../common/ContentContainer';
-import './contacts-styles.css'
+import './contacts-styles.css';
 
 const githubUrl = '';
 const linkedinUrl = '';
@@ -28,7 +28,7 @@ const ContactComponent = () => {
                         <img src='/assets/github.svg' alt='link to linkedin' className='github-icon'/>
                     <span className='contact-text'>Find me on Github</span>
                 </div>
-            </a>  
+            </a> 
         </ContentContainer>
     );
 }

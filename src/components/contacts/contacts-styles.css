@@ -32,3 +32,17 @@
 .contact-container:hover .github-icon {
     filter: none;
 }
+
+@media (hover: none) and (pointer: coarse) {
+   .contact-text {
+        color: inherit;
+    }
+    
+    .contact-icon {
+        filter: none;
+    }
+    
+    .github-icon {
+        filter: none;
+    }
+}
