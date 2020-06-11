@@ -5,6 +5,11 @@ import Typical from 'react-typical';
 import './about-styles.css';
 import Pulse from 'react-reveal/Pulse';
 
+const anchor = document.createElement('a');
+anchor.target = '_blank';
+anchor.rel = 'noopener';
+anchor.href = 'mailto: nicolas.nazzaro@gmail.com';
+
 const AboutComponent = () => {
     return (
         <ContentContainer>
@@ -25,7 +30,12 @@ const AboutComponent = () => {
                                         "I'm a digital business expert"
                                     ]}/>
                             </p>
-                            <Button primary size='tiny'>Contact me</Button>
+                            <Button 
+                                primary size='tiny'
+                                onClick={() => anchor.click()}
+                            >
+                                Contact me
+                            </Button>
                         </div>
                     </div>
                     <p style={{padding: 10, textAlign: 'justify'}}>

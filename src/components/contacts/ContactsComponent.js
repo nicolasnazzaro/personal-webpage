@@ -2,8 +2,8 @@ import React from 'react';
 import { ContentContainer } from '../common/ContentContainer';
 import './contacts-styles.css';
 
-const githubUrl = '';
-const linkedinUrl = '';
+const githubUrl = 'https://github.com/nicolasnazzaro';
+const linkedinUrl = 'https://www.linkedin.com/in/nicolasnazzaro/';
 
 const ContactComponent = () => {
     return (
@@ -11,7 +11,7 @@ const ContactComponent = () => {
             <h3>Contact me <span role='img' aria-label=''>☎️</span></h3>
             <p>If you are interested to know more about me, or you would like to give me a feedback about my work, I'll be thrilled to ear from you.</p>
             <p style={{marginBottom:25}}>You can reach me through the following media:</p>
-            <a href={githubUrl} target='_blank' rel="noopener noreferrer">
+            <a href='mailto: nicolas.nazzaro@gmail.com' target='_blank' rel="noopener noreferrer">
                 <div className='contact-container'>
                         <img src='/assets/email.svg' alt='email' className='contact-icon'/>
                     <span className='contact-text'>Drop me an email</span>
