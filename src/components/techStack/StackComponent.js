@@ -16,7 +16,7 @@ const StackComponent = () => {
                 <tbody>
                     <tr style={{height: 30}}>
                         <th style={{verticalAlign: 'top'}}>Database:</th>
-                        <td style={{verticalAlign: 'top'}}>MySql (Sqlite in develepmnet) with Entity Framework</td>
+                        <td style={{verticalAlign: 'top'}}>MySql (or Sqlite in development) with Entity Framework</td>
                     </tr>
                     <tr style={{height: 30}}>
                         <th style={{verticalAlign: 'top'}}>Back-end:</th>
