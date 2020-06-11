@@ -2,7 +2,7 @@ export const projects = [
     {
         title: 'Reactivities',
         url: 'http://reactivities.nicolasnazzaro.me',
-        description: 'Twitter clone based on a .Net Core web api. The front-end is build with a react spa developed with typescript and MobX as a state management library. Registration and authentication are managed through .Net Core Identity.',
+        description: 'Twitter clone based on a .Net Core web api. The front-end is built with a react spa developed with typescript and MobX as a state management library. Registration and authentication are managed through .Net Core Identity. This application is designed for browser experience only.',
         tags: ['react', 'react hooks', 'mobx', 'typescript', '.net core', 'core identity', 'webapi'],
         image: '/assets/reactivities.png',
         openSource: true,
