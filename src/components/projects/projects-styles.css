@@ -3,8 +3,8 @@
     height: 250px;
     margin-bottom: 10px;
     border-radius: 5px; 
-    background-position: 0;
-    background-repeat: 'no-repeat';
+    background-position: auto;
+    background-repeat: no-repeat;
     cursor: pointer;
 }
 

@@ -28,7 +28,7 @@ const ProjectsComponent = () => {
                                 </Segment>
                                 <Segment>
                                     <Item.Description>
-                                        <p>description</p>
+                                        <p>{p.description}</p>
                                     </Item.Description>
                                 </Segment>
                                 <Segment secondary style={{display: 'flex'}}>

@@ -2,7 +2,7 @@ import React from 'react';
 import { ContentContainer } from '../common/ContentContainer';
 import './contacts-styles.css';
 
-const githubUrl = 'https://github.com/nicolasnazzaro';
+const githubUrl = 'https://github.com/nicolasnazzaro?tab=repositories';
 const linkedinUrl = 'https://www.linkedin.com/in/nicolasnazzaro/';
 
 const ContactComponent = () => {
