@@ -18,7 +18,7 @@ const NavBar = ({location}) => {
           </Menu.Item>
           <Menu.Menu position='right'>
           <Menu.Item active={location.pathname === "/contacts"}>
-              <NavLink style={{color: 'inherit'}} to='/contacts'>Contact</NavLink>
+              <NavLink style={{color: 'inherit'}} to='/contact'>Contact</NavLink>
           </Menu.Item>
           </Menu.Menu>
         </Menu>

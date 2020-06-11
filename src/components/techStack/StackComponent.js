@@ -1,6 +1,7 @@
 import React from 'react';
 import { ContentContainer } from '../common/ContentContainer';
 import { Segment } from 'semantic-ui-react';
+import Flip from 'react-reveal/Flip';
 
 const StackComponent = () => {
     return (
@@ -9,6 +10,7 @@ const StackComponent = () => {
             <p>I'm always excited to learn new technologies, however 
                 whenever possible I'd rather work with the following stack:
             </p>
+            <Flip bottom>
             <Segment style={{marginTop: 30}}>
             <table>
                 <tbody>
@@ -31,6 +33,7 @@ const StackComponent = () => {
                 </tbody>
             </table>
             </Segment>
+            </Flip>
             <p style={{marginTop: 45}}>I'm also familiar with Angular, ASP .NET Framework and .NET Core MVC</p>
         </ContentContainer>
     );
