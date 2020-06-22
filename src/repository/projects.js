@@ -18,6 +18,15 @@ export const projects = [
         github: 'https://github.com/nicolasnazzaro/kanban-board'
     },
     {
+        title: 'Covid Updates',
+        url: 'https://nicolasnazzaro.github.io/covid-updates/',
+        description: 'Simple data visualizer created with react. It retrieves covid updates from a public api through axios and creates an intuitive visualization with chartjs-2 and material-ui.',
+        tags: ['react', 'react hooks' ,'webapi'],
+        image: '/assets/covid.png',
+        openSource: true,
+        github: 'https://github.com/nicolasnazzaro/covid-updates'
+    },
+    {
         title: 'Personal web page',
         url: '',
         description: 'Web page created with react and react-router-dom.',
