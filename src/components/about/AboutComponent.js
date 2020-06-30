@@ -25,9 +25,9 @@ const AboutComponent = () => {
                                     wrapper="b"
                                     steps={[
                                         1000,
-                                        "I'm a full-stack developer",
+                                        "I'm a full stack developer",
                                         1000,
-                                        "I'm a digital business expert"
+                                        "I'm a business analyst"
                                     ]}/>
                             </p>
                             <Button 
